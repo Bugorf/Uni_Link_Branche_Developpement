@@ -1,6 +1,5 @@
-package com.uni.link.Pages.home
+package com.uni.link.pages.home
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +8,9 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.uni.link.R
 import com.uni.link.databinding.FragmentHomeBinding
+import com.uni.link.pages.partage.PartageFragment
 
 class HomeFragment : Fragment() {
 
@@ -38,6 +39,11 @@ class HomeFragment : Fragment() {
         val imageButton: ImageButton = binding.imageButton
         imageButton.setOnClickListener() {
 
+            val fragmentManager = requireActivity().supportFragmentManager
+            val transaction = fragmentManager.beginTransaction()
+            transaction.replace(R.id.container, PartageFragment())
+            transaction.addToBackStack(null)
+            transaction.commit()
 
         }
         return root

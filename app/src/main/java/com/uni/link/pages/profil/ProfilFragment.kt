@@ -1,4 +1,4 @@
-package com.uni.link.Pages.profil
+package com.uni.link.pages.profil
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle

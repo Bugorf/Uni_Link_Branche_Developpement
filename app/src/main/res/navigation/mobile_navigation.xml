@@ -2,14 +2,15 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-            app:startDestination="@id/navigation_home"
-            android:label="@string/title_home">
-    <fragment android:id="@+id/navigation_module" android:name="com.uni.link.Pages.module.ModuleFragment"
-              android:label="fragment_module" tools:layout="@layout/fragment_module"/>
-    <fragment android:id="@+id/navigation_home" android:name="com.uni.link.Pages.home.HomeFragment"
-              android:label="fragment_home" tools:layout="@layout/fragment_home"/>
-    <fragment android:id="@+id/navigation_message" android:name="com.uni.link.Pages.message.MessageFragment"
-              android:label="fragment_message" tools:layout="@layout/fragment_message"/>
-    <fragment android:id="@+id/navigation_profil" android:name="com.uni.link.Pages.profil.ProfilFragment"
-              android:label="fragment_profil" tools:layout="@layout/fragment_profil"/>
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@id/navigation_home">
+
+    <fragment android:id="@+id/navigation_module" android:name="com.uni.link.pages.module.ModuleFragment"
+              android:label="Module" tools:layout="@layout/fragment_module"/>
+    <fragment android:id="@+id/navigation_home" android:name="com.uni.link.pages.home.HomeFragment"
+              android:label="Home" tools:layout="@layout/fragment_home"/>
+    <fragment android:id="@+id/navigation_message" android:name="com.uni.link.pages.message.MessageFragment"
+              android:label="Message" tools:layout="@layout/fragment_message"/>
+    <fragment android:id="@+id/navigation_profil" android:name="com.uni.link.pages.profil.ProfilFragment"
+              android:label="Profil" tools:layout="@layout/fragment_profil"/>
 </navigation>

@@ -1,4 +1,4 @@
-package com.uni.link.Pages.module
+package com.uni.link.pages.module
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
