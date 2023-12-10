@@ -1,6 +1,6 @@
 package com.uni.link.Pages.home
 
-import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,9 +9,6 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.uni.link.Pages.message.MessageFragment
-import com.uni.link.Pages.partage.PartageFragment
-import com.uni.link.R
 import com.uni.link.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -22,7 +19,6 @@ class HomeFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    @SuppressLint("ResourceType")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -42,10 +38,7 @@ class HomeFragment : Fragment() {
         val imageButton: ImageButton = binding.imageButton
         imageButton.setOnClickListener() {
 
-            val fragmentManager = requireActivity().supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.partage_frag, PartageFragment())
-            transaction.commit()
+
         }
         return root
     }
