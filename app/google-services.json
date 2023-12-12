@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "94065739012",
+    "project_id": "uni-link-e5ad5",
+    "storage_bucket": "uni-link-e5ad5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94065739012:android:52b968c2cb2210b4fb3c51",
+        "android_client_info": {
+          "package_name": "com.uni.link"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgvyfGieVDY7bwf-x33gxXhYiIsQqrKRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
