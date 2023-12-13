@@ -6,7 +6,6 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.uni.link.R
-import com.uni.link.ui.ForgotPasswordActivity
 
 class LoginUi : AppCompatActivity() {
 
