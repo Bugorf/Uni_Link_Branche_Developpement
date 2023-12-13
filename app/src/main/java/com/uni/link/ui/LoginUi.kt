@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.uni.link.R
 import com.uni.link.ui.ForgotPasswordActivity
 
-class LoginActivity : AppCompatActivity() {
+class LoginUi : AppCompatActivity() {
 
     lateinit var emailEditText: EditText
     lateinit var passwordEditText: EditText
