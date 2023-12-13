@@ -1,16 +1,21 @@
 package eu.mobeepass.nfcniceticket
 
-import android.R
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.uni.link.MainActivity
+import com.uni.link.databinding.ActivitySplashBinding
 import java.util.*
 
 class SplashActivity : AppCompatActivity() {
+
+    private lateinit var binding1: ActivitySplashBinding // Utilisation du nom correct pour le binding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.list_content)
+        binding1 = ActivitySplashBinding.inflate(layoutInflater) // Utilisation du inflate de la classe générée par le binding
+        setContentView(binding1.root)
+
         val mTimer = Timer()
         val mTimeTask: TimerTask = object : TimerTask() {
             override fun run() {
@@ -19,6 +24,6 @@ class SplashActivity : AppCompatActivity() {
                 finish()
             }
         }
-        mTimer.schedule(mTimeTask, 1500)
+        mTimer.schedule(mTimeTask, 1000)
     }
 }
