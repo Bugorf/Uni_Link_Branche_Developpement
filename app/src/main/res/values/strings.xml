@@ -24,4 +24,5 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_partage">PartageActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_s">S</string>
 </resources>

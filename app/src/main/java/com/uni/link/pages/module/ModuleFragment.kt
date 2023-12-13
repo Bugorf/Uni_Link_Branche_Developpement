@@ -27,7 +27,6 @@ class ModuleFragment : Fragment() {
         _binding = FragmentModuleBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
         val textView: TextView = binding.textModule
         moduleViewModel.text.observe(viewLifecycleOwner) {
