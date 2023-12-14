@@ -6,12 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.uni.link.R
-import com.uni.link.MainActivity
 import com.uni.link.databinding.FragmentHomeBinding
+import com.uni.link.pages.cardsintents.CodecActivity
+import com.uni.link.pages.cardsintents.IntelligenceArtificielleActivity
+import com.uni.link.pages.cardsintents.JavaActivity
+import com.uni.link.pages.cardsintents.LangageAssembleurActivity
 import com.uni.link.pages.partage.PartageFragment
 
 class HomeFragment : Fragment() {
@@ -35,36 +37,25 @@ class HomeFragment : Fragment() {
 
 
         // TODO
-        binding.cardIssues.setOnClickListener {
-//            DynamicToast.makeWarning(context!!, "Developing").show()
-            val intent = Intent(context, MainActivity::class.java)
-//            intent.putExtra(AppConfig.LOGIN, sharedPreferences.getString(LOGIN, "User"))
-            intent.putExtra("PAGE", "Issues")
+        binding.cardC.setOnClickListener {
+            val intent = Intent(context, CodecActivity::class.java)
             startActivity(intent)
         }
 
         // TODO
-        binding.cardPullRequest.setOnClickListener {
-//            DynamicToast.makeWarning(context!!, "Developing").show()
-            val intent = Intent(context, MainActivity::class.java)
-//            intent.putExtra(AppConfig.LOGIN, sharedPreferences.getString(LOGIN, "User"))
-            intent.putExtra("PAGE", "Pull Requests")
+        binding.cardIA.setOnClickListener {
+            val intent = Intent(context, IntelligenceArtificielleActivity::class.java)
             startActivity(intent)
         }
 
-        binding.cardRepo.setOnClickListener {
-
-//            DynamicToast.makeWarning(context!!, "Developing").show()
-            val intent = Intent(context, MainActivity::class.java)
-//            intent.putExtra(AppConfig.LOGIN, sharedPreferences.getString(LOGIN, "User"))
-//            intent.putExtra("USER_TYPE", "me")
+        binding.cardJava.setOnClickListener {
+            val intent = Intent(context, JavaActivity::class.java)
             startActivity(intent)
-
         }
 
-        binding.cardOrganizations.setOnClickListener {
-            startActivity(Intent(context, MainActivity::class.java))
-//            DynamicToast.makeWarning(context!!, "Developing").show()
+        binding.cardLangageAssembleur.setOnClickListener {
+            val intent = Intent(context,LangageAssembleurActivity::class.java)
+            startActivity(intent)
         }
 
         val imageButton: ImageButton = binding.imageButton

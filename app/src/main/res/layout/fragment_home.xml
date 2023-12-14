@@ -17,7 +17,8 @@
             android:src="@drawable/add"
             android:layout_width="64dp"
             android:layout_height="58dp" android:id="@+id/imageButton"
-            android:background="#00FFFFFF" android:layout_marginEnd="47dp" app:layout_constraintEnd_toEndOf="parent"
+            android:background="#00FFFFFF"
+            android:layout_marginEnd="47dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="78dp"/>
 
     <androidx.core.widget.NestedScrollView
@@ -53,7 +54,7 @@
                         android:layout_margin="6dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/cardIssues"
+                            android:id="@+id/cardC"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -63,7 +64,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 android:layout_margin="10dp"
-                                android:text="Issues"
+                                android:text="C#"
                                 android:textSize="20dp"
                                 android:textColor="@android:color/white"
                                 android:fontFamily="@font/alata_regular"
@@ -71,15 +72,6 @@
                                 android:textStyle="bold"/>
 
 
-                        <ImageView
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
-                                android:layout_margin="4dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                android:src="@drawable/issue"
-                                app:tint="@color/green_50"
-                                android:alpha="0.5"/>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -95,7 +87,7 @@
                         android:layout_margin="6dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/cardPullRequest"
+                            android:id="@+id/cardIA"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -105,23 +97,13 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 android:layout_margin="10dp"
-                                android:text="Pull Requests"
+                                android:text="Intelligence Artificielle"
                                 android:textSize="20dp"
                                 android:textColor="@android:color/white"
                                 android:fontFamily="@font/alata_regular"
                                 android:includeFontPadding="false"
                                 android:textStyle="bold"/>
 
-
-                        <ImageView
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
-                                android:layout_margin="4dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                android:src="@drawable/git_pull_request"
-                                app:tint="@color/blue_50"
-                                android:alpha="0.5"/>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -140,17 +122,21 @@
                     android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
+                        android:id="@+id/cardJava"
                         android:layout_width="0dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="10dp"
                         android:backgroundTint="@color/purple_300"
-                        android:layout_margin="6dp">
+                        android:layout_margin="6dp"
+                        android:clickable="true"
+                        android:onClick="onCardJavaClicked"
+                >
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/cardRepo"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            >
 
                         <TextView
                                 android:layout_width="wrap_content"
@@ -158,7 +144,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 android:layout_margin="10dp"
-                                android:text="Repositories"
+                                android:text="Java"
                                 android:textSize="20dp"
                                 android:textColor="@android:color/white"
                                 android:fontFamily="@font/alata_regular"
@@ -166,15 +152,7 @@
                                 android:textStyle="bold"/>
 
 
-                        <ImageView
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
-                                android:layout_margin="4dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                android:src="@drawable/ic_book_1"
-                                app:tint="@color/green_50"
-                                android:alpha="0.5"/>
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -189,7 +167,7 @@
                         android:layout_margin="6dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/cardOrganizations"
+                            android:id="@+id/cardLangageAssembleur"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -199,7 +177,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 android:layout_margin="10dp"
-                                android:text="Organizations"
+                                android:text="Langage Assembleur"
                                 android:textSize="20dp"
                                 android:textColor="@android:color/white"
                                 android:fontFamily="@font/alata_regular"
@@ -208,15 +186,7 @@
                         />
 
 
-                        <ImageView
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
-                                android:layout_margin="4dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                android:src="@drawable/ic_organization"
-                                app:tint="@color/green_50"
-                                android:alpha="0.5"/>
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 

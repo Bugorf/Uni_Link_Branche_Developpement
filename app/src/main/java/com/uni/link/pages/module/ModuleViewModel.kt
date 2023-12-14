@@ -11,3 +11,5 @@ class ModuleViewModel : ViewModel() {
     }
     val text: LiveData<String> = _text
 }
+
+
