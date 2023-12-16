@@ -4,12 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.uni.link.MainActivity
-import com.uni.link.databinding.ActivitySplashBinding
 import java.util.*
 
 class SplashActivity : AppCompatActivity() {
 
-    private lateinit var binding1: ActivitySplashBinding // Utilisation du nom correct pour le binding
+    private lateinit var binding1:   // Utilisation du nom correct pour le binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
